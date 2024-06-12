@@ -3,9 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="I'm Diego Maldonado, a Software Engineer with experience in Infrastructure and Cloud Computing">
+    <meta name="keywords" content="Software engineer, Software developer, Personal Portfolio">
+    <title>Diego Maldonado's Personal Portfolio</title>
+    <!-- Importing the font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <!-- Connecting with the styles file -->
+     <link rel="stylesheet" href="/css/normalize.css">
+     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <!-- Ctrl + / for commenting -->
+    <header>
+        <div class="container">
+            <h1>Diego</h1>
+            <nav>
+                <a href="#About">About</a>
+                <a href="#Projects">Projects</a>
+                <a href="">Experience</a>
+                <a href="">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="About">
+            <div class="about_me">
+                <div class="about_me_information">
+                    <h2>Diego Maldonado</h2>
+                    <h3>Software Engineering Student</h3>
+                    <p>
+                        I'm a passionate Software Engineering student from Guadalajara, Mexico, with hands-on experience in 
+                        infrastructure and systems management. 
+                        As I continue to hone my skills in software development and IT operations, 
+                        I'm excited to explore innovative solutions and contribute to transformative projects.
+                    </p>
+                </div>
+                <div>
+                    <img src="/img/foto_sobre_mi.webp">
+                </div>
+            </div>
+        </section>
+        <section id="Projects">
+            <div>
+                <h2>
+                    Projects
+                </h2>
+                <div class="showing-projects">
+                    <div class="square">
+                        <div class="images">
+                            <a href="https://github.com/dmaldo19/teacherReview">
+                                <img src="/img/wikiprofes.png" alt="">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>WebPage for Reviews</h3>
+                            <p>
+                                Developed a Django-based platform specifically designed for college students to review and rate their professors. 
+                                This site enables students to share their experiences and insights, providing valuable references for others when planning 
+                                their class schedules.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <div class="images">
+                            <a href="https://github.com/dmaldo19/teacherReview">
+                                <img src="/img/Agent Based Modeling.png" alt="">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>Agent Based Model</h3>
+                            <p>
+                                Developed a Python simulation using Agent-Based Modeling to analyze strategic interactions in Rock Paper Scissors. 
+                                Visualized outcomes and behaviors with Matplotlib.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <div class="images">
+                            <a href="https://github.com/dmaldo19/teacherReview">
+                                <img src="/img/Schedule Generator.png" alt="">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3>Schedule Generator</h3>
+                            <p>
+                                Managed development of an academic schedule generator using Python. 
+                                Coordinated team efforts, integrating backend, frontend, and testing. 
+                                Implemented PyQT5 for frontend-backend connection and handled data exchange with CSV and JSON.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Experience"></section>
+        <Section id="Contact"></Section>
+    </main>
 </body>
 </html>
