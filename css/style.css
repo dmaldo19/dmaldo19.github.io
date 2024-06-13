@@ -1,3 +1,4 @@
+/* Estilos generales que ya tienes */
 * {
     box-sizing: border-box;
 }
@@ -63,7 +64,7 @@ main {
 #About {
     padding: 7% 0;
     text-align: left;
-    height: 100vh;
+    height: 100%;
 }
 
 #About h2 {
@@ -169,15 +170,105 @@ main {
     margin: 10px 0 0;
 }
 
-@media (max-width: 900px) {
-    .showing-projects {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+/* Aquí comienzan las consultas de medios para hacer el diseño responsive */
+
+/* Dispositivos grandes (pantallas grandes) */
+@media (min-width: 1200px) {
+    .container {
+        width: 70%;
     }
 }
 
-@media (max-width: 600px) {
+/* Dispositivos medianos (tablets, pantallas de tamaño mediano) */
+@media (max-width: 1199px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .container a {
+        margin: 10px 0;
+    }
+
+    .about_me_information, .about_me img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about_me_information {
+        margin-bottom: 20px;
+    }
+
+    #Projects h2 {
+        font-size: 40px;
+    }
+
     .showing-projects {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Dispositivos pequeños (móviles) */
+@media (max-width: 767px) {
+    body {
+        font-size: 18px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .container a {
+        font-size: 18px;
+    }
+
+    main {
+        margin-top: 60px; /* Ajuste para el header fijo más pequeño */
+    }
+
+    #About img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .about_me_information h2 {
+        font-size: 20px;
+    }
+
+    .about_me_information h3 {
+        font-size: 16px;
+    }
+
+    .about_me_information p {
+        font-size: 16px;
+    }
+
+    #Projects h2 {
+        font-size: 30px;
+    }
+
+    .showing-projects {
+        grid-template-columns: 1fr;
+    }
+
+    .square .content h3 {
+        font-size: 20px;
+    }
+
+    .square .content p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .showing-projects {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
     }
     header {
         position: fixed;
@@ -196,5 +287,11 @@ main {
         max-width: 250px;
         max-height: 250px;
         border-radius: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .showing-projects {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
     }
 }
