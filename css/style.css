@@ -1,4 +1,3 @@
-/* Estilos generales que ya tienes */
 * {
     box-sizing: border-box;
 }
@@ -70,7 +69,7 @@ header h1 {
 }
 
 main {
-    margin-top: 80px; /* Añadir espacio para evitar la superposición con el header fijo */
+    margin-top: 80px;
 }
 
 #About {
@@ -139,12 +138,12 @@ main {
 
 .experience {
     display: flex;
-    flex-direction: column; /* Cambiar a columna para apilar los elementos verticalmente */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Centrar el texto */
-    gap: 20px; /* Ajustar el espacio entre los elementos */
-    padding: 20px; /* Añadir algo de espacio interno */
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .experience img {
@@ -155,10 +154,10 @@ main {
 
 .experience_information {
     width: 100%;
-    max-width: 600px; /* Limitar el ancho máximo */
+    max-width: 600px;
 }
 
-/* Contenedor principal de la sección de tecnologías */
+
 .technologies-container {
     display: flex;
     flex-direction: column;
@@ -168,7 +167,6 @@ main {
     margin-top: 20px;
 }
 
-/* Ajustes para la palabra "Technologies" */
 .technologies-container h4 {
     margin: 20px 0;
     font-family: "Madimi One";
@@ -176,7 +174,6 @@ main {
     color: #D9D9D9;
 }
 
-/* Asegurar que las imágenes estén centradas y distribuidas correctamente */
 .technologies-images {
     display: flex;
     justify-content: center;
@@ -231,7 +228,6 @@ main {
     width: 20%;
 }
 
-/* Contenedor de los proyectos como una cuadrícula */
 .showing-projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -241,7 +237,6 @@ main {
     padding: 0 15px;
 }
 
-/* Contenedor de cada proyecto */
 .square {
     padding: 20px;
     border-radius: 10px;
@@ -249,21 +244,18 @@ main {
     flex-direction: column;
 }
 
-/* Contenedor de las imágenes */
 .square .images {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Ajuste de las imágenes dentro del contenedor */
 .square .images img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
 }
 
-/* Contenedor del contenido de cada proyecto */
 .square .content {
     text-align: center;
     padding: 10px 0 0;
@@ -278,6 +270,44 @@ main {
     font-size: 16px;
     margin: 10px 0 0;
 }
+
+#Skills {
+    padding: 60px 0;
+    background-color: #260101;
+    color: #D9D9D9;
+    text-align: center;
+}
+
+#Skills h2 {
+    font-family: "Madimi One";
+    font-size: 50px;
+    text-align: center;
+}
+
+#Skills h3 {
+    font-family: "Madimi One";
+    font-size: 35px;
+    text-align: center;
+}
+
+#Skills h4 {
+    font-family: "Madimi One";
+    font-size: 20px;
+}
+
+.skills-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.skills-images img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 25%;
+}
+
 
 @media (min-width: 1200px) {
     .container {
@@ -360,9 +390,24 @@ main {
     .showing-projects {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .item-1{
+        order: 1;
+    }
+
+    .item-2{
+        order: 2;
+    }
+
+    .skills-images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
 }
 
-/* Dispositivos pequeños (móviles) */
 @media (max-width: 767px) {
     body {
         font-size: 13px;
@@ -392,7 +437,7 @@ main {
     }
 
     main {
-        margin-top: 60px; /* Ajuste para el header fijo más pequeño */
+        margin-top: 60px; 
     }
 
     #About img {
@@ -433,7 +478,7 @@ main {
 
 @media (max-width: 900px) {
     .showing-projects {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+        grid-template-columns: repeat(2, 1fr);
     }
     header {
         position: fixed;
@@ -457,6 +502,6 @@ main {
 
 @media (max-width: 800px) {
     .showing-projects {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        grid-template-columns: 1fr;
     }
 }
