@@ -329,7 +329,7 @@ main {
 }
 
 #Contact {
-    padding: 60px;
+    padding: 20px;
     background-color: #D9D9D9;
     color: #260101;
 }
@@ -352,16 +352,13 @@ main {
     margin: 10px 0;
 }
 
-.contact-information{
-    display: flex;
-}
-
 .contact-data{
-    width: 50%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .social-media img{
-    max-width: 30px;
+    max-width: 50px;
     max-height: auto;
     border-radius: 50%;
 }
@@ -369,6 +366,12 @@ main {
 .social-media {
     display: flex;
     gap: 10px;
+}
+
+footer{
+    padding: 20px 0;
+    color: #0D0D0D;
+    text-align: center;
 }
 
 @media (min-width: 1200px) {
@@ -559,6 +562,14 @@ main {
     .square .content p {
         font-size: 14px;
     }
+
+    .contact-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 
@@ -590,6 +601,11 @@ main {
         max-width: 250px;
         max-height: 250px;
         border-radius: 50%;
+    }
+
+    .contact-data{
+        display: flex;
+        flex-direction: column;
     }
 }
 
