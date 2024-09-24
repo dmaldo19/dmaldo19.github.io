@@ -328,6 +328,22 @@ main {
     height: 300px;
 }
 
+.certification {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#Skills .certification h3{
+    font-size: 20px;
+}
+
+.certification img {
+    text-align: center;
+    width: 400px;
+    height: 300px;
+}
+
 #Contact {
     padding: 20px;
     background-color: #D9D9D9;
